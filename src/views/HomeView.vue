@@ -175,49 +175,64 @@
         <tr>
           <td>标本标签不合格率</td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num1']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num1']"
+              @paste.native="pasteMe($event, 'count',1)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num2']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num2']"
+              @paste.native="pasteMe($event, 'count',2)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num3']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num3']"
+              @paste.native="pasteMe($event, 'count',3)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num4']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num4']"
+              @paste.native="pasteMe($event, 'count',4)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num5']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num5']"
+              @paste.native="pasteMe($event, 'count',5)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num6']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num6']"
+              @paste.native="pasteMe($event, 'count',6)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num7']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num7']"
+              @paste.native="pasteMe($event, 'count',7)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num8']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num8']"
+              @paste.native="pasteMe($event, 'count',8)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num9']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num9']"
+              @paste.native="pasteMe($event, 'count',9)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num10']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num10']"
+              @paste.native="pasteMe($event, 'count',10)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num11']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num11']"
+              @paste.native="pasteMe($event, 'count',11)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num12']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num12']"
+              @paste.native="pasteMe($event, 'count',12)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num13']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num13']"
+              @paste.native="pasteMe($event, 'count',13)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num14']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num14']"
+              @paste.native="pasteMe($event, 'count',14)"></el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num15']"></el-input-number>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count1['num15']"
+              @paste.native="pasteMe($event, 'count',15)"></el-input-number>
           </td>
           <td>
             {{count1Fenzi}}
@@ -1351,15 +1366,18 @@
           <td>血培养阳性率</td>
           <td colspan="9">无</td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count32['num10']">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count32['num10']"
+              @paste.native="pasteMe($event, 'count32',10)">
             </el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count32['num11']">
+            <el-input-number :controls=" false" style="width:90px;" v-model="wordData.count32['num11']"
+              @paste.native="pasteMe($event, 'count32',11)">
             </el-input-number>
           </td>
           <td>
-            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count32['num12']">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.count32['num12']"
+              @paste.native="pasteMe($event, 'count32',12)">
             </el-input-number>
           </td>
           <td colspan="3">无</td>
@@ -1452,90 +1470,282 @@
         </tr>
         <tr>
           <td>该专业住院检验月标本总数</td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime1['num1']"
+              @paste.native="pasteMe($event, 'teamTime',1)">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime1['num2']"
+              @paste.native="pasteMe($event, 'teamTime',2)">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime1['num3']"
+              @paste.native="pasteMe($event, 'teamTime',3)">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime1['num4']"
+              @paste.native="pasteMe($event, 'teamTime',4)">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>该专业急诊检验月标本总数</td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime2['num1']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime2['num2']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime2['num3']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime2['num4']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>该专业门诊检验月标本总数</td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
-          <td colspan="2"></td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime3['num1']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime3['num2']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime3['num3']">
+            </el-input-number>
+          </td>
+          <td colspan="2">
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime3['num4']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>急诊检验前周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num1']"
+              @paste.native="pasteMe($event, 'teamTime4',1)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num2']"
+              @paste.native="pasteMe($event, 'teamTime4',2)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num3']"
+              @paste.native="pasteMe($event, 'teamTime4',3)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num4']"
+              @paste.native="pasteMe($event, 'teamTime4',4)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num5']"
+              @paste.native="pasteMe($event, 'teamTime4',5)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num6']"
+              @paste.native="pasteMe($event, 'teamTime4',6)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num7']"
+              @paste.native="pasteMe($event, 'teamTime4',7)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime4['num8']"
+              @paste.native="pasteMe($event, 'teamTime4',8)">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>常规（住院）检验前周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime5['num8']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>常规（门诊）检验前周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime6['num8']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>急诊实验室内周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime7['num8']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>常规（住院）实验室内周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime8['num8']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>常规（门诊）实验室内周转时间</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.teamTime9['num8']">
+            </el-input-number>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -1565,90 +1775,240 @@
         <tr>
           <td>血钾</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num1']"
+              @paste.native="pasteMe($event, 'itemTime',1)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num2']"
+              @paste.native="pasteMe($event, 'itemTime',2)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num3']"
+              @paste.native="pasteMe($event, 'itemTime',3)">
+            </el-input-number>
+          </td>
           <td>60</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num4']"
+              @paste.native="pasteMe($event, 'itemTime',4)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num5']"
+              @paste.native="pasteMe($event, 'itemTime',5)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime1['num6']"
+              @paste.native="pasteMe($event, 'itemTime',6)">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>肌钙蛋白I或肌钙蛋白T</td>
           <td>31</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime2['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>白细胞计数</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime3['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>国际标准化比值（INR）</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime4['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>三大常规</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime5['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>血糖</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime6['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>Na</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num3']">
+            </el-input-number>
+          </td>
           <td>60</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime7['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>Ca</td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num3']">
+            </el-input-number>
+          </td>
           <td>60</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime8['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td colspan="9">门诊项目</td>
@@ -1656,57 +2016,153 @@
         <tr>
           <td>血钾</td>
           <td>88</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num1']"
+              @paste.native="pasteMe($event, 'itemTime9',1)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num2']"
+              @paste.native="pasteMe($event, 'itemTime9',2)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num3']"
+              @paste.native="pasteMe($event, 'itemTime9',3)">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num4']"
+              @paste.native="pasteMe($event, 'itemTime9',4)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num5']"
+              @paste.native="pasteMe($event, 'itemTime9',5)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime9['num6']"
+              @paste.native="pasteMe($event, 'itemTime9',6)">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>肌钙蛋白I或肌钙蛋白T</td>
           <td>90</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime10['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>白细胞计数</td>
           <td>75</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime11['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>尿常规</td>
           <td>75</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime12['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>国际标准化比值（INR）</td>
           <td>74</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime13['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td colspan="9">住院项目</td>
@@ -1714,90 +2170,240 @@
         <tr>
           <td>血钾</td>
           <td>88</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num1']"
+              @paste.native="pasteMe($event, 'itemTime14',1)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num2']"
+              @paste.native="pasteMe($event, 'itemTime14',2)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num3']"
+              @paste.native="pasteMe($event, 'itemTime14',3)">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num4']"
+              @paste.native="pasteMe($event, 'itemTime14',4)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num5']"
+              @paste.native="pasteMe($event, 'itemTime14',5)">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime14['num6']"
+              @paste.native="pasteMe($event, 'itemTime14',6)">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>丙氨酸氨基转移酶</td>
           <td>88</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime15['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>肌钙蛋白I或肌钙蛋白T</td>
           <td>90</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime16['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>促甲状腺激素</td>
           <td>90</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num3']">
+            </el-input-number>
+          </td>
           <td>240</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime17['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>甲胎蛋白</td>
           <td>90</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num3']">
+            </el-input-number>
+          </td>
           <td>240</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime18['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>白细胞计数</td>
           <td>75</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime19['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>尿常规</td>
           <td>75</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num3']">
+            </el-input-number>
+          </td>
           <td>30</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime20['num6']">
+            </el-input-number>
+          </td>
         </tr>
         <tr>
           <td>国际标准化比值（INR）</td>
           <td>74</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num3']">
+            </el-input-number>
+          </td>
           <td>120</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.itemTime21['num6']">
+            </el-input-number>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -1868,15 +2474,42 @@
           <td>率%</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num1']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num2']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num3']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num4']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num5']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num6']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num7']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num8']">
+            </el-input-number>
+          </td>
+          <td>
+            <el-input-number :controls="false" style="width:90px;" v-model="wordData.report['num9']">
+            </el-input-number>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -2093,6 +2726,105 @@ export default {
         count32zongji: { 'count32Fenzi': 0, 'count32Fenmu': 0, 'count32Ratio': '0%' },
         count33zongji: { 'count33Fenzi': 0, 'count33Fenmu': 0, 'count33Ratio': '0%' },
         count34zongji: { 'count34Fenzi': 0, 'count34Fenmu': 0, 'count34Ratio': '0%' },
+
+        //各组周转时间（min）
+        teamTime1: {
+          'num1':'','num2':'','num3':'','num4':''
+        },
+        teamTime2: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': ''
+        },
+        teamTime3: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': ''
+        },
+        teamTime4: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '','num8': '' 
+        },
+        teamTime5: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '' 
+        },
+        teamTime6: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '' 
+        },
+        teamTime7: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '' 
+        },
+        teamTime8: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '' 
+        },
+        teamTime9: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '' 
+        },
+
+        //各项目周转时间
+        itemTime1: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime2: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime3: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime4: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime5: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime6: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime7: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime8: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime9: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime10: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime11: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime12: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime13: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime14: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime15: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime16: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime17: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime18: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime19: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime20: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+        itemTime21: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': ''
+        },
+
+        //传染病上报
+        report: {
+          'num1': '', 'num2': '', 'num3': '', 'num4': '', 'num5': '', 'num6': '', 'num7': '', 'num8': '', 'num9': ''
+        }
       },
 
     }
@@ -2711,14 +3443,32 @@ export default {
         type: 'success'
       }); 
     },
-    pasteMe(e, type) {
+    pasteMe(e, type,n) {
       let source = e.clipboardData.getData("Text");
       // this.wordData[type] = {};
       //获得每行数据
       let rows = source.split("\r\n");
 
       for (var i = 0; i < rows.length; i++) {
-        this.wordData[type]['num' + i] = rows[i];
+        if (type == 'count') {
+          this.wordData[type + (i + 1)]['num' + n] = rows[i];
+          console.log(this.wordData[type + (i + 1)]['num' + n])
+        } else if (type == 'count32') {
+          this.wordData['count'+(i+32)]['num' + n] = rows[i];
+        } else if (type == 'teamTime') {
+          this.wordData[type + (i + 1)]['num' + n] = rows[i];
+        } else if (type == 'teamTime4') {
+          this.wordData['teamTime' + (i + 4)]['num' + n] = rows[i];
+        } else if (type == 'itemTime') {
+          this.wordData[type + (i + 1)]['num' + n] = rows[i];
+        } else if (type == 'itemTime9') {
+          this.wordData['itemTime' + (i + 9)]['num' + n] = rows[i];
+        } else if (type == 'itemTime14') {
+          this.wordData['itemTime' + (i + 14)]['num' + n] = rows[i];
+        } else {
+          this.wordData[type]['num' + i] = rows[i];
+        }
+        
       }
       // this.wordData[type] = rows;
       console.log(this.wordData);
